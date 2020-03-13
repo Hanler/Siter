@@ -1,0 +1,172 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.dive_0{
+	text-align: center;
+	font-size: 34px;
+	font-family: Times New Roman;
+	font-weight: bold;
+	margin: auto;
+	margin-bottom: 30px;
+	color: #1d70a1;
+
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+.dive{
+	background-image: url("https://dyskurs.net/wp-content/uploads/2018/12/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	height: 200px;
+	width: 100%;
+
+	grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  z-index: 1;
+}
+.dive_1{
+	background-image: url("https://dyskurs.net/wp-content/uploads/2018/12/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+
+	grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  z-index: 2;
+}
+.dive_2{
+	grid-column-start: 2;
+	grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 8fr;
+  grid-template-rows: 1fr 2.78fr;
+}
+#time{
+	text-align: right;
+	margin-right: 70px;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 24px;
+	color: #118570;
+	text-shadow: 5px 3px 7px grey;
+	display: none;
+}
+#ans1{
+	background-color: #96958d;
+	border: 3px solid black;
+	color: white;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	margin: 20px auto;
+	display: none;
+}
+#ans2{
+	background-color: #96958d;
+	border: 3px solid black;
+	color: white;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	display: none;
+	margin: 20px auto;
+}
+#ans3{
+	background-color: #96958d;
+	border: 3px solid black;
+	color: white;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	margin: 20px auto;
+	display: none;
+}
+#ans4{
+	background-color: #96958d;
+	border: 3px solid black;
+	color: white;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	display: none;
+	margin: 20px auto;
+}
+#knopka{
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+	display: flex;
+	justify-content: center;
+	margin-top: 180px;
+
+}
+#knopka:hover {background-position: right center;}
+
+#ans1:hover {
+	color: black;
+	background-color: white;
+	}
+#ans2:hover {
+	color: black;
+	background-color: white;
+	}
+#ans3:hover {
+	color: black;
+	background-color: white;
+	}
+#ans4:hover {
+	color: black;
+	background-color: white;
+	}
+#ques{
+	font-size: 22px;
+	font-family: Verdana;
+	font-style: italic;
+	color: grey;
+	text-align: center;
+	font-weight: bold;
+}
+#result{
+	display: none;
+	font-size: 30px;
+	font-family: Verdana;
+	font-weight: bold;
+	color: #5f5e70;
+	text-align: center;
+}
+#ratio{
+	display: none;
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 22px;
+	color: grey;
+}
+#amount_of_right, #amount_of_false{
+	display: none;
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 16px;
+	color: grey;
+}
